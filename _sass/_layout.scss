@@ -4,6 +4,8 @@
 
  body {
    padding-bottom: 70px;
+   margin-left: -200px;
+   width: 100%;
    color: var(--global-text-color);
    background-color: var(--global-bg-color);
  }
@@ -18,6 +20,7 @@
    padding-bottom: 0;
  }
 
+
 .container {
   max-width: $max-content-width;
 }
@@ -28,6 +31,7 @@
     width: 100%;
   }
 }
+
 
 // TODO: redefine content layout.
 
