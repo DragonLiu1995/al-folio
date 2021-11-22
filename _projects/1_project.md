@@ -1,13 +1,13 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: assets/img/12.jpg
+title: Audeo
+description: Kun Su, <b>Xiulong Liu</b>, Eli Shlizerman <b>NEURIPS 2020</b>
+img: assets/img/audeo_cover.png
 importance: 1
 category: work
 ---
 
-Every project has a beautiful feature showcase page.
+<!-- Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
 Make your photos 1/3, 2/3, or full width.
 
@@ -33,22 +33,44 @@ To give your project a background in the portfolio page, just add the img tag to
 </div>
 <div class="caption">
     Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
+</div> -->
+
+
+<button onclick="location.href='http://faculty.washington.edu/shlizee/audeo/'" type="button">
+         Project Page</button>
+<button onclick="location.href='https://proceedings.neurips.cc/paper/2020/hash/227f6afd3b7f89b96c4bb91f95d50f6d-Abstract.html'" type="button">
+       Paper</button>
+<button onclick="location.href='https://github.com/shlizee/Audeo'" type="button">
+        Code</button>
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/5.jpg title: "example image" class: "img-fluid rounded z-depth-1" %}
+        {% responsive_image path: assets/img/audeo.png title: "example image" class: "img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    <b>A novel system that gets as an input video frames of a musician playing the piano and generates corresponding music for the video.</b>
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
+<h3><b>Abstract</b></h3>
+We present a novel system that gets as an input video frames of a musician playing the piano and generates the music for that video. Generation of music from visual cues is a challenging problem and it is not clear whether it is an attainable goal at all. Our main aim in this work is to explore the plausibility of such a transformation and to identify cues and components able to carry the association of sounds with visual events. To achieve the transformation we built a full pipeline named ‘Audeo’ containing three components. We first translate the video frames of the keyboard and the musician hand movements into raw mechanical musical symbolic representation Piano-Roll (Roll) for each video frame which represents the keys pressed at each time step. We then adapt the Roll to be amenable for audio synthesis by including temporal correlations. This step turns out to be critical for meaningful audio generation. As a last step, we implement Midi synthesizers to generate realistic music. Audeo converts video to audio smoothly and clearly with only a few setup constraints. We evaluate Audeo on ‘in the wild’ piano performance videos and obtain that their generated music is of reasonable audio quality and can be successfully recognized with high precision by popular music identification software.
 
 
-<div class="row justify-content-sm-center">
+<div class="row">
+<div class="col-sm mt-3 mt-md-0">
+    <h3><b>Video</b></h3><br>
+    <iframe width="672" height="378" src="https://www.youtube.com/embed/8rS3VgjG7_c" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+
+<br><br>
+<div class="row">
+  <p>For more information, please refer to <a href="https://proceedings.neurips.cc/paper/2020/hash/227f6afd3b7f89b96c4bb91f95d50f6d-Abstract.html">paper</a> and <a href="https://faculty.washington.edu/shlizee/audeo/">Project Page</a> </p>
+  <br><br>
+</div>
+
+
+<!-- <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
         {% responsive_image path: assets/img/6.jpg title: "example image" class: "img-fluid rounded z-depth-1" %}
     </div>
@@ -77,4 +99,4 @@ Here's the code for the last row of images above:
     </div>
 </div>
 ```
-{% endraw %}
+{% endraw %} -->
